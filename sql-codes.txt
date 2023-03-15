@@ -1,0 +1,16 @@
+CREATE TABLE `category` (
+  `id` int NOT NULL,
+  `name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+)
+
+CREATE TABLE `product` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `brand` varchar(255) DEFAULT NULL,
+  `category_id` int DEFAULT NULL,
+  `model` varchar(255) DEFAULT NULL,
+  `price` int DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) 
+
+Foreign Key product.category_id -> category.id
