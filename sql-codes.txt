@@ -13,4 +13,4 @@ CREATE TABLE `product` (
   PRIMARY KEY (`id`)
 ) 
 
-Foreign Key product.category_id -> category.id
+Foreign Key: product.category_id -> category.id
